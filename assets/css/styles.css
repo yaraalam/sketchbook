@@ -1,1 +1,41 @@
 /* styles.css */
+body {
+    margin: 0;
+    background: black;
+    overflow: hidden;
+}
+
+/* sketchbook page */
+.book {
+    width: 100vw;
+    height: 100vh;
+    background: url("assets/paper.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* page */
+.page {
+    width: 90%;
+    height: 90%;
+    position: relative;
+}
+
+/* sketches */
+.sketch {
+    position: absolute;
+    width: 250px;
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+
+.s1 { top: 10%; left: 15%; transform: rotate(-8deg); }
+.s2 { top: 40%; left: 60%; transform: rotate(6deg); }
+.s3 { top: 60%; left: 30%; transform: rotate(-3deg); }
+
+.sketch:hover {
+    transform: scale(1.1);
+}
+
