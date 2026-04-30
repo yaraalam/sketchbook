@@ -32,7 +32,7 @@
 }
 
 /* scattered placements */
-.s1 { top: 8%; left: 12%; transform: rotate(-10deg); z-index: 2; }
+.s1 { top: 8%; left: 12%; transform: rotate(-10deg); z-index: 2; position: absolute; }
 .s2 { top: 25%; left: 25%; transform: rotate(6deg); z-index: 3; }
 .s3 { top: 55%; left: 20%; transform: rotate(-4deg); z-index: 2; }
 .s4 { top: 2%; right: 6%; transform: rotate(8deg); z-index: 1; }
@@ -56,7 +56,7 @@
 
 .t1 { top: 7%; left: 14%; transform: rotate(-10deg); z-index: 2; }
 .t2 { top: 18%; left: 58%; }
-.t3 { bottom: 25%; left: 10%; transform:rotate(-20deg); }
+.t3 { bottom: 25%; left: 10%; transform:rotate(-15deg); }
 
 /* stains */
 .stain {
