@@ -1,5 +1,5 @@
 /* styles.css */
-body {
+.body {
     margin: 0;
     background: black;
     overflow: hidden;
@@ -9,7 +9,7 @@ body {
 .book {
     width: 100vw;
     height: 100vh;
-    background: url("assets/img/paper.jpg");
+    background-image: url("../img/paper.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;

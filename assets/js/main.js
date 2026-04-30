@@ -1,3 +1,16 @@
 // main.js
+let sketches = document.querySelectorAll(".sketch");
 
-console.log("Hello, World!");
+sketches.forEach(sketch => {
+
+    sketch.addEventListener("click", () => {
+
+        sketch.style.left = Math.random() * 70 + "%";
+        sketch.style.top = Math.random() * 70 + "%";
+
+        sketch.style.transform =
+        `rotate(${Math.random() * 40 - 20}deg)`;
+
+    });
+
+});
