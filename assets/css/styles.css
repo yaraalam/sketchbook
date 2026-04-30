@@ -9,7 +9,7 @@
 .book {
     width: 100vw;
     height: 100vh;
-    background-image: url("../img/paper.jpg");
+    background-image: url("../img/paper.png");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -26,17 +26,23 @@
 /* sketches */
 .sketch {
     position: absolute;
-    width: 250px;
-    filter: grayscale(100%);
-    transition: 0.5s;
+    width: 220px;
+    filter: grayscale(100%) contrast(110%);
+    transition: 0.4s;
 }
 
-.s1 { top: 10%; left: 15%; transform: rotate(-8deg); }
-.s2 { top: 40%; left: 60%; transform: rotate(6deg); }
-.s3 { top: 60%; left: 30%; transform: rotate(-3deg); }
+/* scattered placements */
+.s1 { top: 8%; left: 12%; transform: rotate(-10deg); z-index: 2; }
+.s2 { top: 25%; left: 55%; transform: rotate(6deg); z-index: 3; }
+.s3 { top: 55%; left: 20%; transform: rotate(-4deg); z-index: 2; }
+.s4 { top: 10%; right: 15%; transform: rotate(8deg); z-index: 1; }
+.s5 { bottom: 15%; right: 25%; transform: rotate(-6deg); z-index: 2; }
+.s6 { bottom: 10%; left: 45%; transform: rotate(3deg); z-index: 1; }
 
+/* hover interaction */
 .sketch:hover {
-    transform: scale(1.1);
+    transform: scale(1.15) rotate(0deg);
+    z-index: 10;
 }
 
 /* tape */
