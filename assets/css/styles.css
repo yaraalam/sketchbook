@@ -9,7 +9,7 @@ body {
 .book {
     width: 100vw;
     height: 100vh;
-    background: url("assets/paper.jpg");
+    background: url("assets/img/paper.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -39,3 +39,50 @@ body {
     transform: scale(1.1);
 }
 
+/* tape */
+.tape {
+    position: absolute;
+    width: 80px;
+}
+
+.t1 { top: 8%; left: 14%; }
+.t2 { top: 38%; left: 58%; }
+
+/* stains */
+.stain {
+    position: absolute;
+    width: 150px;
+    opacity: 0.4;
+}
+
+.st1 { bottom: 20%; left: 20%; }
+.st2 { top: 30%; right: 20%; }
+
+/* visual navigation elements */
+.circle {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 60px;
+    height: 60px;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+.square {
+    position: absolute;
+    bottom: 150px;
+    right: 120px;
+    width: 50px;
+    height: 50px;
+    border: 3px solid black;
+}
+
+.line {
+    position: absolute;
+    top: 20px;
+    left: 40%;
+    width: 200px;
+    height: 3px;
+    background: black;
+}
