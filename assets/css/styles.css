@@ -60,7 +60,7 @@
 /* sketches */
 .sketch {
     position: absolute;
-    width: 220px;
+    width: 300px;
     filter: grayscale(100%) contrast(110%);
     transition: 0.4s;
     transition: transform 0.3s ease, filter 0.3s ease;
