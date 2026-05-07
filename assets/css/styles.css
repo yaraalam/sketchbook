@@ -63,6 +63,13 @@
     width: 220px;
     filter: grayscale(100%) contrast(110%);
     transition: 0.4s;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+}
+
+.sketch:hover {
+    transform: scale(1.33) rotate(1deg);
+    filter: brightness(1.05);
 }
 
 /* scattered placements */
