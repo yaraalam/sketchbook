@@ -23,6 +23,40 @@
     position: relative;
 }
 
+.page {
+    position: relative;
+}
+
+.fragment {
+    position: absolute;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: 999;
+    transition: transform 1s ease-out;
+}
+
+/* irregular torn pieces */
+
+.f1 {
+    clip-path: polygon(0 0, 100% 0, 70% 60%, 0 80%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 70% 60%, 0 80%);
+}
+
+.f2 {
+    clip-path: polygon(30% 0, 100% 20%, 100% 100%, 20% 80%);
+    -webkit-clip-path: polygon(30% 0, 100% 20%, 100% 100%, 20% 80%);
+}
+
+.f3 {
+    clip-path: polygon(0 40%, 60% 20%, 80% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 40%, 60% 20%, 80% 100%, 0 100%);
+}
+
+.f4 {
+    clip-path: polygon(50% 0, 100% 0, 100% 50%, 60% 40%);
+    -webkit-clip-path: polygon(50% 0, 100% 0, 100% 50%, 60% 40%);
+}
+
 /* sketches */
 .sketch {
     position: absolute;
@@ -42,11 +76,6 @@
 .s8 { bottom: 40%; right: 2%; transform: rotate(-10deg); z-index: 2; }
 .s9 { top: 30%; left: 2%; transform: rotate(-5deg); z-index: 2; }
 
-/* hover interaction */
-.sketch:hover {
-    transform: scale(1.15) rotate(0deg);
-    z-index: 10;
-}
 
 /* tape */
 .tape {
